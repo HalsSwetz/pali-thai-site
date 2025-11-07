@@ -15,16 +15,14 @@ export default function Header() {
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
-      <nav className="container-custom">
-        <div className="flex justify-between items-center h-16 md:h-20">
-
-          <Link href="/" className="flex items-center">
-            <span className="text-2xl md:text-3xl font-bold text-thai-red">
-              Pali Thai
-            </span>
-          </Link>
-
-          <div className="hidden md:flex space-x-8">
+  <nav className="container-custom">
+    <div className="flex justify-between items-center h-16 md:h-20">
+      <Link href="/" className="flex items-center">
+        <span className="text-2xl md:text-3xl font-bold text-thai-red font-thai">
+          Pali Thai <span className="text-lg text-thai-blue ml-2">ปาลี ไทย</span>
+        </span>
+      </Link>
+          <div className="hidden md:flex items-center space-x-8">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -34,17 +32,14 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-          </div>
-
-          <div className="hidden md:block">
+            
             <Link
               href="/order"
-              className="bg-thai-red text-white px-6 py-2 rounded-full hover:bg-thai-orange transition-colors font-medium"
+              className="text-thai-blue hover:text-thai-red transition-colors font-semibold border-2 border-thai-blue hover:border-thai-red px-4 py-2 rounded transition-all"
             >
-              Order Now
+              Online Order
             </Link>
           </div>
-
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden p-2"
@@ -71,6 +66,10 @@ export default function Header() {
         {mobileMenuOpen && (
           <div className="md:hidden pb-4">
             <div className="flex flex-col space-y-4">
+              <p className="text-sm text-gray-500 italic py-2 border-b border-gray-200">
+                East Meets West
+              </p>
+              
               {navigation.map((item) => (
                 <Link
                   key={item.name}
@@ -83,10 +82,10 @@ export default function Header() {
               ))}
               <Link
                 href="/order"
-                className="bg-thai-red text-white px-6 py-3 rounded-full hover:bg-thai-orange transition-colors font-medium text-center"
+                className="text-thai-blue hover:text-thai-red border-2 border-thai-blue hover:border-thai-red px-6 py-3 rounded font-semibold text-center transition-all"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Order Now
+                Online Order
               </Link>
             </div>
           </div>

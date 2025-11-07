@@ -4,17 +4,16 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   
-
   --color-thai-red: #D32F2F;
+  --color-thai-blue: #2D2A7F;
   --color-thai-gold: #F9A825;
   --color-thai-orange: #FF6F00;
   
-
-  --color-colorado-green: #2E7D32;
-  --color-colorado-sage: #8BC34A;
-  --color-colorado-stone: #78909C;
+  --color-colorado-green: #2E5C3E;
+  --color-colorado-sage: #A8C69F;
+  --color-colorado-bookcliff: #C17A5B;
+  --color-colorado-peach: #E8A87C;
   
-
   --color-cream: #FFF8E1;
   --color-charcoal: #212121;
 }
@@ -23,4 +22,30 @@ body {
   background: var(--color-cream);
   color: var(--color-charcoal);
   font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+.font-thai {
+  font-family: 'Noto Sans Thai', system-ui, sans-serif !important;
+}
+
+.container-custom {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .container-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-custom {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 }

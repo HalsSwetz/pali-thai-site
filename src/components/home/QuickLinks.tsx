@@ -3,7 +3,7 @@ import Link from 'next/link';
 const links = [
   {
     title: 'View Menu',
-    description: 'Explore our authentic Thai dishes with customizable options',
+    description: 'Explore our authentic Thai dishes with customizable spice levels',
     href: '/menu',
     color: 'bg-thai-red hover:bg-thai-orange',
   },
@@ -11,13 +11,13 @@ const links = [
     title: 'Find Us',
     description: 'Check our weekly schedule to find where we\'ll be serving',
     href: '/schedule',
-    color: 'bg-colorado-green hover:bg-colorado-sage',
+    color: 'bg-charcoal hover:bg-colorado-stone',
   },
   {
     title: 'Order Online',
     description: 'Place your order ahead for quick pickup',
     href: '/order',
-    color: 'bg-thai-gold hover:bg-thai-orange',
+    color: 'bg-thai-orange hover:bg-thai-red',
   },
 ];
 
